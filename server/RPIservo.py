@@ -242,15 +242,28 @@ if __name__ == "__main__":
     sc = ServoCtrl()
     sc.start()
     #st.start()
+    # print("start!")
+    # goalPosList = [[90, 90], [20, 20], [160, 160]]
+    
+    # try:
+    #     while True:
+    #         for goalPos in goalPosList:
+    #             print(goalPos)
+    #             sc.moveToPos(2, goalPos)
+    #             time.sleep(2)
+
     print("start!")
-    goalPosList = [[90, 90], [20, 20], [160, 160]]
+    goalPosList = [[0, 0, 0, 0, 0],
+                   [90, 90, 90, 90, 90],
+                   [160, 160, 160, 160, 160]]
     
     try:
         while True:
             for goalPos in goalPosList:
                 print(goalPos)
-                sc.moveToPos(2, goalPos)
+                sc.moveToPos(5, goalPos)
                 time.sleep(2)
+
             '''
             sc.moveAngle(0, 90)
             time.sleep(1.5)
