@@ -259,7 +259,7 @@ if __name__ == "__main__":
     
     try:
         while True:
-            for goalPos in goalPosList:
+            for goalPos in planGoseList:
                 print(goalPos)
                 sc.moveToPos(5, goalPos)
                 time.sleep(2)
